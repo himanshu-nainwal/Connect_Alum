@@ -1,0 +1,11 @@
+.homemain {
+    height: 100%; /* Full viewport height */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    font-size: 2rem; /* Optional: Adjust font size */
+    color: #333; /* Optional: Adjust text color */
+  }

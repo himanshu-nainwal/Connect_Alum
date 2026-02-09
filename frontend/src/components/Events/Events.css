@@ -1,0 +1,167 @@
+/* Container */
+.events-container {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 30%;
+    background-color: white;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    /* border-top-right-radius: 2px; */
+  }
+  
+  .sidebar-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e3a8a;
+    padding: 16px;
+    border-bottom: 2px solid #ddd;
+  }
+  
+  .events-list {
+    padding: 16px;
+  }
+  
+  .event-item {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .event-item.selected {
+    background-color: #dbeafe;
+    border-color: #1e3a8a;
+  }
+  
+  .event-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  .event-department {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .event-price {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #1e40af;
+  }
+  
+  .event-tags {
+    margin-top: 8px;
+  }
+  
+  .tag {
+    font-size: 0.8rem;
+    color: #333;
+    background-color: #e0e7ff;
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  
+  /* Details Section */
+  .details-section {
+    width: 70%;
+    padding: 24px;
+    overflow-y: auto;
+  }
+  
+  .event-details {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    border-radius: 8px;
+  }
+  
+  .details-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  .details-info {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  .details-tags {
+    margin-top: 8px;
+  }
+  
+  .details-description {
+    font-size: 1rem;
+    color: #333;
+    margin-top: 12px;
+  }
+  
+  .details-speakers {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #1e40af;
+    margin-top: 12px;
+  }
+  
+  /* Registration Box */
+  .registration-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f3f4f6;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 16px;
+  }
+  
+  .registration-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #1e3a8a;
+  }
+  
+  .register-button {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+  
+  .register-button:hover {
+    background-color: #1e40af;
+  }
+  
+  /* Meeting Link */
+  .meeting-link {
+    margin-top: 16px;
+  }
+  
+  .meeting-link a {
+    color: #2563eb;
+    text-decoration: none;
+  }
+  
+  .meeting-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Time Info */
+  .time-info {
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  

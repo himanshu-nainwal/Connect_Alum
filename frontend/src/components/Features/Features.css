@@ -1,0 +1,101 @@
+/* General Container Styling */
+.features-section {
+    padding: 4rem 1.5rem;
+    background-color: #EEF3FE;
+    text-align: center;
+  }
+  
+  /* Title Styles */
+  .features-title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #1f2937;
+    line-height: 1.3;
+  }
+  
+  .features-description {
+    margin-top: 0.75rem;
+    font-size: 1.125rem;
+    color: #4b5563;
+    max-width: 42rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Grid Layout */
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
+    gap: 2rem;
+    margin-top: 2.5rem;
+}
+  
+  /* Individual Feature Box */
+  .feature-box {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature-box:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    transform: scale(1.05);
+  }
+  
+  /* Icon Styling */
+  .feature-icon {
+    font-size: 2rem;
+    background: #dbeafe;
+    color: #2563eb;
+    padding: 0.75rem;
+    border-radius: 0.75rem;
+    display: inline-block;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Feature Title */
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-left: 1rem;
+  }
+  
+  /* Feature Description */
+  .feature-description {
+    margin-top: 1rem;
+    font-size: 1.125rem;
+    color: #6b7280;
+  }
+  
+  @media (max-width: 640px) {
+    .features-title {
+      font-size: 2rem;
+    }
+  
+    .features-description {
+      font-size: 1rem;
+    }
+  }
+  
+
+  @media (max-width: 640px) {
+    .features-section {
+      padding: 3rem 1rem;
+    }
+  
+    .features-grid {
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (hover: hover) {
+    .feature-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.1);
+    }
+  }
+  

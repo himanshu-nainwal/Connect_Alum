@@ -1,0 +1,192 @@
+.login-popup {
+    position: fixed; /* Fixed positioning to cover the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black background */
+    z-index: 1000; /* High z-index to ensure it's on top of everything */
+    display: grid;
+    place-items: center; /* Center the popup content */
+}
+
+.login-popup-container {
+    width: max(23vw, 330px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    z-index: 1001; /* Ensure the container is above the overlay */
+}
+
+.login-popup-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.close-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: #808080;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.close-icon:hover {
+    color: #000; /* Darker color on hover */
+}
+
+.login-popup-input {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-with-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    color: #808080;
+    font-size: 16px; /* Adjust icon size */
+}
+
+.input-with-icon input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px 10px 10px 35px; /* Padding to accommodate the icon */
+    border-radius: 4px;
+    width: 100%;
+    font-size: 14px;
+    transition: border-color 0.3s ease; /* Smooth transition for focus effect */
+}
+
+.input-with-icon input:focus {
+    border-color: #375dfa; /* Highlight input on focus */
+}
+
+.login-popup-container button {
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: #375dfa;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login-popup-container button:hover {
+    background-color: #375dfa; /* Slightly darker tomato color on hover */
+}
+
+.login-popup-condition {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.login-popup-condition input {
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.login-popup-condition p {
+    font-size: 14px;
+    color: #808080;
+}
+
+.login-popup p {
+    font-size: 14px;
+    color: #808080;
+    text-align: center;
+}
+
+.login-popup p span {
+    color: #375dfa;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.login-popup p span:hover {
+    color: #375dfa; /* Slightly darker tomato color on hover */
+}
+
+/* Fade-in animation for the popup */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Styling for the role selection dropdown (only fourth input) */
+.input-with-icon:nth-of-type(4) {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Custom dropdown styling (only for the fourth input) */
+.input-with-icon:nth-of-type(4) select {
+    width: 100%;
+    height: 36px; /* Unified height */
+    padding: 0 12px;
+    padding-right: 30px; /* Space for arrow */
+    border-radius: 4px;
+    border: 1px solid #666;
+    font-size: 14px;
+    color: #808080;
+    background-color: white;
+    outline: none;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    appearance: none; /* Removes default browser dropdown styling */
+    cursor: pointer;
+}
+
+/* Custom dropdown arrow (only for the fourth input) */
+.input-with-icon:nth-of-type(4)::after {
+    content: ''; 
+    position: absolute; 
+    z-index: 1; 
+    width: 8px; 
+    height: 8px; 
+    border-right: 2px solid #666; 
+    border-bottom: 2px solid #666; 
+    transform: rotate(45deg); 
+    right: 10px; 
+    top: 50%; 
+    margin-top: -4px; 
+    pointer-events: none; 
+}
+
+/* Hide default dropdown arrow for IE */
+.input-with-icon:nth-of-type(4) select::-ms-expand {
+    display: none;
+}
+
+/* Hover effect (only for fourth input) */
+.input-with-icon:nth-of-type(4) select:hover {
+    background-color: #f9f9f9;
+}
+
+/* Focus effect (only for fourth input) */
+.input-with-icon:nth-of-type(4) select:focus {
+    border-color: #375dfa;
+}

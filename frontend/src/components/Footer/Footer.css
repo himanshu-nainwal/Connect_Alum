@@ -1,0 +1,149 @@
+/* General Styles */
+.footer {
+    background-color: #eff3ff; /* bg-gray-100 */
+    padding: 2.5rem 1.5rem; /* py-10 px-6 */
+    border-top: 1px solid #d1d5db;
+  }
+  
+  .container {
+    max-width: 80rem; /* max-w-7xl */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr; /* grid-cols-1 */
+    gap: 3rem; /* gap-8 */
+  }
+  
+  @media (min-width: 768px) {
+    .container {
+      grid-template-columns: repeat(3, 1fr); /* md:grid-cols-3 */
+      padding: 0 3rem; /* md:px-12 */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .container {
+      /* padding: 0 5rem; */
+    }
+  }
+  
+  /* Left Section - Logo & Description */
+  .logo-section {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; /* space-x-2 */
+  }
+  
+  .logo {
+    font-size: 1.25rem; /* text-xl */
+    font-weight: 600; /* font-semibold */
+  }
+  
+  .description {
+    color: #4b5563; /* text-gray-600 */
+    margin-top: 0.75rem; /* mt-3 */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem; /* space-x-4 */
+    margin-top: 1rem; /* mt-4 */
+    color: #6b7280; /* text-gray-500 */
+  }
+  
+  .social-icons i {
+    cursor: pointer;
+  }
+  
+  .social-icons i:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+  }
+  
+  /* Middle Section - Product & Company */
+  .middle-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* grid-cols-2 */
+    gap: 1.5rem; /* gap-6 */
+  }
+  
+  .section-title {
+    font-weight: 600; /* font-semibold */
+    color: #1f2937; /* text-gray-800 */
+  }
+  
+  .section-list {
+    margin-top: 0.75rem; /* mt-3 */
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem; /* space-y-2 */
+    color: #4b5563; /* text-gray-600 */
+  }
+  
+  .section-list li {
+    cursor: pointer;
+  }
+  
+  .section-list li:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+  }
+  
+  /* Right Section - Newsletter Subscription */
+  .newsletter-section {
+    margin-top: 1rem; /* mt-4 */
+  }
+  
+  .newsletter-input {
+    width: 100%;
+    padding: 0.5rem 1rem; /* px-4 py-2 */
+    border: 1px solid #d1d5db; /* border-gray-300 */
+    border-radius: 0.5rem; /* rounded-lg */
+    outline: none;
+  }
+  
+  .newsletter-input:focus {
+    border-color: #3b82f6; /* focus:ring-blue-500 */
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1); /* focus:ring */
+  }
+  
+  .newsletter-button {
+    width: 100%;
+    background-color: #2563eb; /* bg-blue-600 */
+    color: white;
+    padding: 0.5rem 1rem; /* py-2 */
+    border-radius: 0.5rem; /* rounded-lg */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem; /* space-x-2 */
+    margin-top: 0.75rem; /* mt-3 */
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .newsletter-button:hover {
+    background-color: #1d4ed8; /* hover:bg-blue-700 */
+  }
+  
+  /* Bottom Section */
+  .bottom-section {
+    border-top: 1px solid #d1d5db; /* border-gray-300 */
+    margin-top: 2.5rem; /* mt-10 */
+    padding-top: 1.5rem; /* pt-6 */
+    text-align: center;
+    color: #4b5563; /* text-gray-600 */
+    font-size: 0.875rem; /* text-sm */
+  }
+  
+  .bottom-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem; /* space-x-6 */
+    margin-top: 0.75rem; /* mt-3 */
+  }
+  
+  .bottom-links span {
+    cursor: pointer;
+  }
+  
+  .bottom-links span:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+  }

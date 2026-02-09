@@ -1,0 +1,304 @@
+/* General Styles */
+.alumni-container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #f9fafb;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .main-content {
+    padding: 4rem 1rem;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    margin-bottom: 4rem;
+  }
+  
+  .hero-content {
+    text-align: center;
+  }
+  
+  .badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 10px;
+    background-color: #dbeafe;
+    border: 1px solid #bfdbfe;
+    margin-bottom: 1.5rem;
+  }
+  
+  .badge p {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1d4ed8;
+  }
+  
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1e293b;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    color: #4b5563;
+    margin-bottom: 2rem;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .primary-button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.2s;
+  }
+  
+  .primary-button:hover {
+    background-color: #2563eb;
+  }
+  
+  .secondary-button {
+    background-color: white;
+    border: 1px solid #d1d5db;
+    padding: 0.75rem 2rem;
+    border-radius: 0.375rem;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  
+  .secondary-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  .icon {
+    margin-left: 0.5rem;
+    height: 1rem;
+    width: 1rem;
+  }
+  
+  /* Tabs Section */
+  .tabs-section {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .tabs-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .tab-button {
+    padding: 0.75rem 1.5rem;
+    text-align: center;
+    border-radius: 0.375rem;
+    background-color: #f3f4f6;
+    color: #374151;
+    font-size: 1rem;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .tab-button.active {
+    background-color: #dbeafe;
+    color: #1d4ed8;
+  }
+  
+  .tab-button:hover {
+    background-color: #e5e7eb;
+  }
+  
+  .tab-content {
+    display: none;
+  }
+  
+  .tab-content:not(.hidden) {
+    display: block;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.2s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon-container {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    background-color: #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .icon-container .icon {
+    height: 1.5rem;
+    width: 1.5rem;
+    color: #3b82f6;
+  }
+  
+  .outline-button {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #d1d5db;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.2s;
+  }
+  
+  .outline-button:hover {
+    background-color: #f3f4f6;
+  }
+  
+  /* Mentee Info */
+  .mentee-info {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+  }
+  
+  .mentee-avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    background-color: #dbeafe;
+    margin-right: 1rem;
+    overflow: hidden;
+  }
+  
+  .mentee-avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Alumni Info */
+  .alumni-info {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .alumni-avatar {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 9999px;
+    background-color: #dbeafe;
+    margin-right: 1rem;
+    overflow: hidden;
+  }
+  
+  .alumni-avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  /* Event Cards */
+  .event-image {
+    aspect-ratio: 16 / 9;
+    background-color: #dbeafe;
+    position: relative;
+  }
+  
+  .event-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .event-tag {
+    position: absolute;
+    top: 0.75rem;
+    left: 0.75rem;
+    background-color: #3b82f6;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+  }
+  
+  .event-details {
+    padding: 1.5rem;
+  }
+  
+  /* Job Cards */
+  .job-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+  }
+  
+  .job-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 0.5rem;
+    background-color: #dbeafe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.75rem;
+  }
+  
+  .job-icon .icon {
+    height: 1.25rem;
+    width: 1.25rem;
+    color: #1d4ed8;
+  }
+  
+  .job-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.75rem 0;
+  }
+  
+  .job-tags span {
+    font-size: 0.75rem;
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.5rem;
+    border-radius: 9999px;
+  }
+  
+  /* Contribution Cards */
+  .contribution-card {
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #dbeafe;
+  }
+  
+  .contribution-card h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1d4ed8;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contribution-card p {
+    font-size: 0.875rem;
+    color: #4b5563;
+  }
